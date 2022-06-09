@@ -19,7 +19,7 @@ public class Conexion {
         Connection connection = null;
         try {
 
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/bancopreguntas", "root", "6afmgd8r");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/bancopreguntas", "root", "");
             if (connection != null) {
                 System.out.println("\nLa conexion a sido exitosa\n");
             }
