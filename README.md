@@ -8,14 +8,17 @@ Base de datos MYSQL
 
 Anexan en el ropositorio tablas de preguntas y respuestas 
 
-para agregar a la base de datos primero agregar respuestas ya que las preguntas son llave foranea de la respuesta
-
-para ganar el reto hay que contestar correctamente las preguntas
-
-las preguntas van subiendo de rango si responde una buena continua y suma puntos
-si responde una mal termina el juego y queda con 0 puntos
-
 las preguntas se realizan de manera aleatoria por medio de una consulta en la base de datos
+
+hay 25 preguntas en total. Tiene 5 Rondas donde cada una es más dificíl que la otra.
+
+Cada Ronda tiene 5 preguntas y se elegirá una pregunta al azar.
+
+Tiene 5 rondas, 1 pregunta por cada ronda.
+
+Se gana al responder todo correctamente. Se pierde si se contesta alguna mal y se pierden los puntos acumulados.
+
+
 
 
 
