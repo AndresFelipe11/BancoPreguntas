@@ -15,12 +15,18 @@ public class Pregunta {
     
     private int idPregunta;
     private String pregunta;
-    private ArrayList<Respuesta> respuestas;
+    private Ronda ronda;
 
-    public Pregunta(int idPregunta, String pregunta, ArrayList<Respuesta> respuestas) {
+    public Pregunta() {
+    }
+    
+
+    
+
+    public Pregunta(int idPregunta, String pregunta, Ronda ronda) {
         this.idPregunta = idPregunta;
         this.pregunta = pregunta;
-        this.respuestas = new ArrayList<>();
+        this.ronda=ronda;
     }
 
     /**
@@ -52,18 +58,23 @@ public class Pregunta {
     }
 
     /**
-     * @return the respuestas
+     * @return the ronda
      */
-    public ArrayList<Respuesta> getRespuestas() {
-        return respuestas;
+    public Ronda getRonda() {
+        return ronda;
     }
 
     /**
-     * @param respuestas the respuestas to set
+     * @param ronda the ronda to set
      */
-    public void setRespuestas(ArrayList<Respuesta> respuestas) {
-        this.respuestas = respuestas;
+    public void setRonda(Ronda ronda) {
+        this.ronda = ronda;
     }
+
+    /**
+     * @return the respuestas
+     */
+
 
     
     

@@ -45,11 +45,10 @@ public class JugadorDAO {
         try (Connection conexion = db_connect.get_connection()) {
             PreparedStatement stament = null;
             try {
-                String query = "INSERT INTO jugador (idJugador, nombreJugador, puntaje) VALUES (? ,?, ?)";
+                String query = "INSERT INTO jugador (nombreJugador, puntaje) VALUES (?, ?)";
                 stament = (PreparedStatement) conexion.prepareStatement(query);
-                stament.setInt(1, jugador.getIdJugador());
-                stament.setString(2, jugador.getNombreJugador());
-                stament.setInt(3, jugador.getPuntaje());
+                stament.setString(1, jugador.getNombreJugador());
+                stament.setInt(2, jugador.getPuntaje());
                 stament.executeUpdate();
                 System.out.println("El Jugador " + jugador.getNombreJugador() + " a sido creado correctamente en BD");
             } catch (SQLException ex) {

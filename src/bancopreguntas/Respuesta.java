@@ -15,15 +15,22 @@ public class Respuesta {
     private boolean resultado;
     private String respuesta;
     private char literalABCD;
+    private int idPregunta;
+
+    public Respuesta() {
+    }
 
    
 
-    public Respuesta(int idRespuesta,boolean resultado, String respuesta, char literalABCD) {
+    public Respuesta(int idRespuesta,boolean resultado, String respuesta, char literalABCD, int idPregunta) {
         this.idRespuesta =idRespuesta;
         this.resultado = resultado;
         this.respuesta = respuesta;
         this.literalABCD = literalABCD;
+        this.idPregunta= idPregunta;
     }
+    
+    
     
      /**
      * @return the idRespuesta
@@ -53,8 +60,49 @@ public class Respuesta {
         return literalABCD;
     }
 
-   
-    
+    /**
+     * @param idRespuesta the idRespuesta to set
+     */
+    public void setIdRespuesta(int idRespuesta) {
+        this.idRespuesta = idRespuesta;
+    }
+
+    /**
+     * @param resultado the resultado to set
+     */
+    public void setResultado(boolean resultado) {
+        this.resultado = resultado;
+    }
+
+    /**
+     * @param respuesta the respuesta to set
+     */
+    public void setRespuesta(String respuesta) {
+        this.respuesta = respuesta;
+    }
+
+    /**
+     * @param literalABCD the literalABCD to set
+     */
+    public void setLiteralABCD(char literalABCD) {
+        this.literalABCD = literalABCD;
+    }
+
+    /**
+     * @return the idPregunta
+     */
+    public int getIdPregunta() {
+        return idPregunta;
+    }
+
+    /**
+     * @param idPregunta the idPregunta to set
+     */
+    public void setIdPregunta(int idPregunta) {
+        this.idPregunta = idPregunta;
+    }
+
+
     
     
     

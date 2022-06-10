@@ -12,13 +12,11 @@ package bancopreguntas;
 public class Ronda {
     
         private int nivelDificultad;
-        private Categoria categoria;
         private int puntaje;
         private boolean estado;
 
-    public Ronda(int nivelDificultad, Categoria categoria) {
+    public Ronda(int nivelDificultad) {
         this.nivelDificultad = nivelDificultad;
-        this.categoria = categoria;
         this.puntaje = nivelDificultad*25;
         this.estado=false;
     }
@@ -41,16 +39,6 @@ public class Ronda {
     /**
      * @return the categoria
      */
-    public Categoria getCategoria() {
-        return categoria;
-    }
-
-    /**
-     * @param categoria the categoria to set
-     */
-    public void setCategoria(Categoria categoria) {
-        this.categoria = categoria;
-    }
 
     /**
      * @return the puntaje

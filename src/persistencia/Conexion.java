@@ -20,8 +20,8 @@ public class Conexion {
         try {
 
             connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/bancopreguntas", "root", "");
-            if (connection != null) {
-                System.out.println("\nLa conexion a sido exitosa\n");
+            if (connection == null) {
+                System.out.println("\n ah fallado la conexion\n");
             }
         } catch (SQLException e) {
             System.out.println(e);

@@ -14,13 +14,10 @@ public class Jugador {
     private int idJugador;
     private String nombreJugador;
     private int puntaje;
-    private int intentos;    
 
-    public Jugador(int idJugador, String nombreJugador, int puntaje, int intentos) {
-        this.idJugador = idJugador;
+    public Jugador(String nombreJugador) {
         this.nombreJugador = nombreJugador;
-        this.puntaje = puntaje;
-        this.intentos = intentos;
+        this.puntaje = 0;
     }
 
     /**
@@ -65,19 +62,6 @@ public class Jugador {
         this.puntaje = puntaje;
     }
 
-    /**
-     * @return the intentos
-     */
-    public int getIntentos() {
-        return intentos;
-    }
-
-    /**
-     * @param intentos the intentos to set
-     */
-    public void setIntentos(int intentos) {
-        this.intentos = intentos;
-    }
 
 
 
