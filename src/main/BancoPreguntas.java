@@ -85,6 +85,7 @@ public class BancoPreguntas {
                 }
             } else {
                 if (correcta == entradaCorrecta) {
+                    jugador.setPuntaje(jugador.getPuntaje() + ronda.getPuntaje());
                     JOptionPane.showMessageDialog(null,
                             "Felicitaciones has ganado el juego " + jugador.getNombreJugador() + "\n" +
                                     "Tu puntaje es: " + jugador.getPuntaje());
